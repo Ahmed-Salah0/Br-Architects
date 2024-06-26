@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0; 
+       scroll-behavior: smooth;
+
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.containar{
+    width: 90%;
+    margin: 100px auto;
+}
+/* navbar */
+nav{
+    background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 40px;
+position: sticky;
+top: 0;
+z-index: 2;
+}
+nav .navleft a{
+font-size: 18px;
+color: #000;
+transition: 0.5s;
+ padding: 10px;
+
+}
+nav .navleft a span{
+    font-weight: bold;
+    margin-right: 10px;
+}
+nav .navleft a:hover{
+    background: #ccc;
+}
+nav .navright ul{
+display: flex;
+list-style: none;
+gap: 30px;
+}
+nav .navright ul a{
+color: #000;
+font-size: 18px;
+padding: 10px;
+transition: .5s;
+}
+nav .navright a:hover{
+    background: #ccc;
+}
+nav .menu{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+/* header */
+header{
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+header h2 {
+    font-size: 40px;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 40%;
+}
+header h2 span{
+background: #000;
+padding: 10px;
+opacity: .7;
+}
+/* projects */
+.houses{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 10px;
+}
+.house{
+width: 23%;
+position: relative;
+}
+.house img{
+    width: 100%;
+}
+.house p{
+    position: absolute;
+    top: 0;
+    background: #000;
+    color: #ccc;
+    padding: 10px;
+}
+hr{
+     margin: 30px;
+    opacity: .3;
+}
+/* about */
+.chars{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 10px;
+
+}
+.main-p {
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: .7;
+}
+.char{
+width: 23%;
+position: relative;
+}
+.chars img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+ .chars h4{
+    opacity: .6;
+    margin-top: 15px;
+ }
+ .chars p{
+    margin-top: 10px;
+    line-height: 1.5;
+ }
+ .chars button{
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;   
+    border: none; 
+    transition: .5s;
+ }
+.chars button:hover{
+    background-color: #ccc;
+}
+/* contact */
+.form input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    outline: none;
+}
+.form button{
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 15px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+.form button:hover{
+background-color: #ccc;
+color: #000;
+
+}
+/* map */
+.map img{
+    width: 100%;
+}
+/* footer */
+footer{
+    background: #000;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+/* responsiive */
+@media screen and (max-width: 480px){
+nav{
+    padding: 20px;
+}
+nav .navright ul{
+    display: none;
+}
+nav .menu{
+    display: block;
+}
+header h2{
+    left: 10%;
+}
+.houses{
+    flex-direction: column;
+}
+.house{
+    width: 100%;
+}
+.chars{
+    flex-direction: column;
+}
+.char{
+    width: 100%;
+}
+
+}
+@media screen and (min-width : 481px) and (max-width : 768px){
+    nav{
+        padding: 20px;
+    }
+    nav .navright ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    header h2{
+        left: 40%;
+    }
+    
+    .house{
+        width: 48%;
+    }
+  
+    .char{
+        width: 48%;
+    }
+
+}
+    
